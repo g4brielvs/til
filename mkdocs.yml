@@ -1,0 +1,58 @@
+site_name: Today I Learned
+site_url: https://g4brielvs.me/til
+site_description: A curated list of snippets
+site_author: g4brielvs
+repo_name: g4brielvs/til
+repo_url: https://github.com/g4brielvs/til
+theme:
+  name: material
+  font:
+    text: Roboto
+    code: Roboto Mono
+  features:
+    - navigation.instant
+    - navigation.tracking
+  palette:
+    # Palette toggle for light mode
+    - scheme: default
+      toggle:
+        icon: material/brightness-7
+        name: Switch to dark mode
+
+    # Palette toggle for dark mode
+    - scheme: slate
+      toggle:
+        icon: material/brightness-4
+        name: Switch to light mode
+
+extra:
+  consent:
+    title: Cookie consent
+    description: >-
+      We use cookies to recognize your repeated visits and preferences, as well
+      as to measure the effectiveness of our documentation and whether users
+      find what they're searching for. With your consent, you're helping us to
+      make our documentation better.
+  generator: false
+  social:
+      - icon: fontawesome/brands/twitter
+        link: https://twitter.com/g4brielvs
+extra_css:
+    - css/extra.css
+
+markdown_extensions:
+  - admonition
+  - pymdownx.details
+  - pymdownx.superfences
+
+nav:
+  - "aws": aws.md
+  - "docker": docker.md
+  - "git": git.md
+  - "jupyter": jupyter.md
+  - "linux": linux.md
+  - "macos": macos.md
+  - "pandas": pandas.md
+  - "python": python.md
+  - "R": r.md
+  - "zsh": zsh.md
